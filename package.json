@@ -1,0 +1,13 @@
+{
+  "name": "g33kidd.dev",
+  "private": true,
+  "scripts": {
+    "build": "gridsome build",
+    "develop": "gridsome develop",
+    "explore": "gridsome explore"
+  },
+  "dependencies": {
+    "gridsome": "^0.7.0",
+    "gridsome-plugin-tailwindcss": "^4.1.1"
+  }
+}
