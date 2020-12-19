@@ -20,4 +20,11 @@ export default function (Vue, { router, head, isClient }) {
   Vue.component('Layout', DefaultLayout)
   Vue.component('logo', Logo)
   Vue.component('Header', Header)
+
+  head.scripts.push({
+    async: true,
+    defer: true,
+    'data-domain': "g33kidd.dev",
+    src: "https://plausible.io/js/plausible.js"
+  })
 }

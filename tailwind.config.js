@@ -12,7 +12,9 @@ module.exports = {
         'g-gray': '#ebebeb',
         'g-purple': "#B93FF2",
         'g-green': "#78F23F",
-        'g-discord-hover': "#7d98f6"
+        'g-discord-hover': "#7d98f6",
+        'moeshop-pink': "#F22555",
+        'moeshop-green': "#00FFBA",
       },
       fontFamily: {
         'rubik': "Rubik, Arial, sans-serif",

@@ -5,26 +5,29 @@
         <div class="flex md:flex-row flex-col md:space-x-24 px-8 md:px-0">
 
           <div class="md:w-1/2">
-            <div class="flex justify-center">
-              <!-- <vue-typer :text="welcomeMessages" :shuffle="true" pre-erase-delay='3000'></vue-typer> -->
-            </div>
-            <div class="text-g-gray font-rubik grid grid-cols-1 justify-center items-center mt-8 py-8 bg-gray-900 border-2 border-gray-800 rounded">
-              <div class="flex flex-row items-center space-x-5 text-xl justify-evenly">
-                <div class="text-gray-600 font-black uppercase w-1/2 text-right">Name</div>
+            <!-- <div class="flex justify-center"> -->
+            <div class="text-g-red text-4xl font-rubik mt-8">Hello..</div>
+            <!-- <vue-typer :text="welcomeMessages" :shuffle="true" pre-erase-delay='3000'></vue-typer> -->
+            <!-- </div> -->
+            <div class="anime-bg bg-cover relative text-g-gray font-rubik grid grid-cols-1 justify-center items-center mt-8 py-8 border-2 border-gray-800 rounded">
+
+              <div class="flex flex-row items-center space-x-5 text-xl justify-evenly z-10">
+                <div class="font-black uppercase w-1/2 text-right">Name</div>
                 <div class="font-rubik flex-1 text-left">Josh</div>
               </div>
-              <div class="flex flex-row items-center space-x-5 text-xl justify-evenly">
-                <div class="text-gray-600 font-black uppercase w-1/2 text-right">Age</div>
+              <div class="flex flex-row items-center space-x-5 text-xl justify-evenly z-10">
+                <div class="font-black uppercase w-1/2 text-right">Age</div>
                 <div class="font-rubik flex-1 text-left">24</div>
               </div>
-              <div class="flex flex-row items-center space-x-5 text-xl justify-evenly">
-                <div class="text-gray-600 font-black uppercase w-1/2 text-right">Location</div>
+              <div class="flex flex-row items-center space-x-5 text-xl justify-evenly z-10">
+                <div class="font-black uppercase w-1/2 text-right">Location</div>
                 <div class="font-rubik flex-1 text-left">Anywhere</div>
               </div>
-              <div class="flex flex-row items-center space-x-5 text-xl mt-5 justify-evenly">
+              <div class="flex flex-row items-center space-x-5 text-xl mt-5 justify-evenly z-10">
                 <div class="text-g-blue font-bangers font-extralight uppercase w-1/2 text-3xl text-right">XP</div>
                 <div class="font-bangers flex-1 text-3xl text-left">420</div>
               </div>
+              <div class="absolute top-0 bottom-0 left-0 right-0 bg-g-black opacity-80 z-0"></div>
             </div>
             <article class="py-8 font-rubik text-white grid grid-cols-1 space-y-6">
               <!-- TODO Change?? -->
@@ -40,6 +43,11 @@
           </div>
 
         </div>
+        <!-- 
+        <div class="bg-moeshop-pink">
+          <h1 class="py-48 mx-auto text-center font-bangers text-6xl text-moeshop-green">Oops what's this look like?</h1>
+        </div> -->
+
       </div>
     </div>
   </Layout>
@@ -67,12 +75,18 @@ export default {
     };
   },
   metaInfo: {
-    title: "Hello, world!",
+    title: "Hello",
   },
 };
 </script>
 
 <style lang="scss">
+.anime-bg {
+  background: #333;
+  background-image: url("/backgrounds/space-neko.jpg");
+  background-size: cover;
+}
+
 .vue-typer {
   font-family: Roboto Slab;
   font-size: 1.8rem;

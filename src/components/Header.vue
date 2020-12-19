@@ -6,7 +6,7 @@
         <g-link to="/">
           <logo class="w-10 h-10" />
         </g-link>
-        <nav class="ml-24 nav text-white md:flex space-x-2 hidden">
+        <nav class="grid grid-cols-2 md:flex gap-1 text-sm">
           <nav-link v-for="link in links" :extra="link.extra" :key="link.to" :text="link.text" :to="link.to" />
         </nav>
         <g-link class="nav-link text-white font-bangers uppercase text-lg py-2 px-4 rounded transition transform hover:scale-110 hover:rotate-6 bg-g-red" to="/studios">
