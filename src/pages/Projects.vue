@@ -1,11 +1,15 @@
 <template>
-  <Layout></Layout>
+  <Layout>
+  </Layout>
 </template>
 
 <script>
 export default {
   metaInfo: {
-    title: "About us",
+    title: "Hello, world!",
   },
 };
 </script>
+
+<style>
+</style>

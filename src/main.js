@@ -2,8 +2,19 @@
 // The Client API can be used here. Learn more: gridsome.org/docs/client-api
 
 import DefaultLayout from '~/layouts/Default.vue'
+import Logo from '~/components/Logo.vue'
+import Header from '~/components/Header.vue'
+import VueTyperPlugin from 'vue-typer'
+
+require('typeface-roboto')
+require('typeface-roboto-slab')
+require('typeface-rubik')
+require('typeface-bangers')
 
 export default function (Vue, { router, head, isClient }) {
-  // Set default layout as a global component
+  Vue.use(VueTyperPlugin)
+
   Vue.component('Layout', DefaultLayout)
+  Vue.component('logo', Logo)
+  Vue.component('Navbar', Header)
 }

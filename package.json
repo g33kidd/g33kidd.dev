@@ -7,7 +7,23 @@
     "explore": "gridsome explore"
   },
   "dependencies": {
+    "@tailwindcss/typography": "^0.3.1",
+    "autoprefixer": "^9.8.6",
     "gridsome": "^0.7.0",
-    "gridsome-plugin-tailwindcss": "^4.1.1"
+    "gridsome-plugin-svg": "0.0.14",
+    "gridsome-plugin-tailwindcss": "^4.1.1",
+    "postcss": "^7.0.35",
+    "sass": "^1.30.0",
+    "sass-loader": "^10.1.0",
+    "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.0.2",
+    "tailwindcss-brand-colors": "^0.2.0",
+    "typeface-bangers": "^1.1.13",
+    "typeface-roboto": "^1.1.13",
+    "typeface-roboto-slab": "^1.1.13",
+    "typeface-rubik": "^1.1.13",
+    "vue-typer": "^1.2.0"
+  },
+  "devDependencies": {
+    "tailwindcss-important": "^1.0.0"
   }
 }
