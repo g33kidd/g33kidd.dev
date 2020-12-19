@@ -6,7 +6,7 @@
 
           <div class="md:w-1/2">
             <div class="flex justify-center">
-              <vue-typer :text="welcomeMessages" :shuffle="true" pre-erase-delay='3000'></vue-typer>
+              <!-- <vue-typer :text="welcomeMessages" :shuffle="true" pre-erase-delay='3000'></vue-typer> -->
             </div>
             <div class="text-g-gray font-rubik grid grid-cols-1 justify-center items-center mt-8 py-8 bg-gray-900 border-2 border-gray-800 rounded">
               <div class="flex flex-row items-center space-x-5 text-xl justify-evenly">
