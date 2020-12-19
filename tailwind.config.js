@@ -12,10 +12,7 @@ module.exports = {
         'g-gray': '#ebebeb',
         'g-purple': "#B93FF2",
         'g-green': "#78F23F",
-        discord: {
-          darker: "#7d98f6",
-          DEFAULT: "#7289da",
-        }
+        'g-discord-hover': "#7d98f6"
       },
       fontFamily: {
         'rubik': "Rubik, Arial, sans-serif",

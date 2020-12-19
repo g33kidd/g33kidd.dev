@@ -32,11 +32,11 @@ export default {
         { text: "About", to: "/about" },
         { text: "Contact", to: "/contact" },
         {
-          text: "Discord",
-          to: "/discord",
-          extra: "bg-discord",
+          text: "Discord Server",
+          to: "https://discord.gg/qQnBPDm",
+          extra:
+            "bg-discord transition transform hover:bg-g-discord-hover hover:scale-105",
         },
-        { text: "Contact", to: "/test" },
       ],
     };
   },
