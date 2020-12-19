@@ -1,6 +1,10 @@
 <template>
   <Layout>
-    Hey bro!
+
+    <div class="bg-black py-32">
+
+    </div>
+
   </Layout>
 </template>
 
@@ -11,3 +15,6 @@ export default {
   },
 };
 </script>
+
+<style>
+</style>

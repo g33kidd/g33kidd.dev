@@ -11,10 +11,12 @@ require('typeface-roboto-slab')
 require('typeface-rubik')
 require('typeface-bangers')
 
+require('css.gg/icons/all.scss')
+
 export default function (Vue, { router, head, isClient }) {
   Vue.use(VueTyperPlugin)
 
   Vue.component('Layout', DefaultLayout)
   Vue.component('logo', Logo)
-  Vue.component('Navbar', Header)
+  Vue.component('Header', Header)
 }

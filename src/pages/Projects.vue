@@ -1,5 +1,6 @@
 <template>
   <Layout>
+    Hey bro!
   </Layout>
 </template>
 
@@ -10,6 +11,3 @@ export default {
   },
 };
 </script>
-
-<style>
-</style>

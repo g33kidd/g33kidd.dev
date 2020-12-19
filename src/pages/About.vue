@@ -1,5 +1,5 @@
 <template>
-  <Layout></Layout>
+  <Layout>Hey bro!</Layout>
 </template>
 
 <script>
