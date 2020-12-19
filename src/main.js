@@ -21,7 +21,7 @@ export default function (Vue, { router, head, isClient }) {
   Vue.component('logo', Logo)
   Vue.component('Header', Header)
 
-  head.scripts.push({
+  head.script.push({
     async: true,
     defer: true,
     'data-domain': "g33kidd.dev",
