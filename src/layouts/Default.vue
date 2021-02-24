@@ -35,6 +35,26 @@ body {
   // background-position: center;
   color: #ffffff;
 
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  ::-webkit-scrollbar:empty {
+    width: 0px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: darken(#f72585, 12%);
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #4cc9f0;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: darken(#4cc9f0, 8%);
+  }
+
   .layout {
     width: 100%;
     height: 100vh;
@@ -47,6 +67,8 @@ body {
     left: 200px;
     right: 0;
     top: 60px;
+    bottom: 0;
+    overflow-y: scroll;
     margin: 12px;
     border-right: #f72585;
     border-right-style: solid;

@@ -13,6 +13,8 @@ require('typeface-bangers')
 require('~/assets/main.scss')
 require('css.gg/icons/all.scss')
 
+require('~/assets/prism.scss')
+
 export default function (Vue, { router, head, isClient }) {
   Vue.use(VueTyperPlugin)
 

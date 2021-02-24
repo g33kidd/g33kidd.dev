@@ -10,6 +10,31 @@ module.exports = {
     config.resolve.alias.set('@images', '~/assets/images')
   },
 
+  transformers: {
+    //Add markdown support to all file-system sources
+    remark: {
+      externalLinksTarget: '_blank',
+      externalLinksRel: ['nofollow', 'noopener', 'noreferrer'],
+      anchorClassName: 'icon icon-link',
+      plugins: [
+        ['gridsome-plugin-remark-prismjs-all', {
+          highlightClassName: "gridsome-highlight",
+          codeTitleClassName: "gridsome-code-title",
+          classPrefix: 'language-',
+          aliases: {},
+          noInlineHighlight: false,
+          showLineNumbers: false,     //  `require("prismjs/plugins/line-numbers/prism-line-numbers.css");`
+          languageExtensions: [],
+          prompt: {                   //  `require("prismjs/plugins/command-line/prism-command-line.css");`
+            user: `root`,
+            host: `localhost`,
+            global: false,
+          }
+        }]
+      ]
+    }
+  },
+
   plugins: [
     { use: "gridsome-plugin-tailwindcss" },
     {
@@ -20,8 +45,7 @@ module.exports = {
         typeName: "JournalEntry",
         remark: {
           plugins: [
-            '@gridsome/remark-prismjs',
-            '@gridsome/vue-remark'
+            // '@gridsome/remark-prismjs',
           ]
         }
       }

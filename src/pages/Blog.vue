@@ -1,9 +1,13 @@
 <template>
   <Layout>
     <div class="page-content">
-      <div v-for="edge in $page.entries.edges" :key="edge.node.id">
+      <g-link
+        :to="edge.node.path"
+        v-for="edge in $page.entries.edges"
+        :key="edge.node.id"
+      >
         {{ edge.node.title }} Hey
-      </div>
+      </g-link>
     </div>
   </Layout>
 </template>
