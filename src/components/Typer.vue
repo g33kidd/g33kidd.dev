@@ -1,6 +1,6 @@
 <template>
   <div class="content">
-    <vue-typer :text="welcomeMessages" :shuffle="true"></vue-typer>
+    <vue-typer :text="welcomeMessages" :shuffle="true" :speed="120"></vue-typer>
   </div>
 </template>
 
@@ -30,10 +30,10 @@ export default {
 
 <style lang="scss">
 .content {
-  position: absolute;
-  left: 200px;
-  right: 0;
-  top: 0;
+  // position: absolute;
+  // left: 200px;
+  // right: 0;
+  // top: 0;
   margin: 12px;
   border-right: darken(#f72585, 25%);
   border-right-style: dotted;

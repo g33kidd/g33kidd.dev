@@ -14,7 +14,6 @@ require('~/assets/main.scss')
 require('css.gg/icons/all.scss')
 
 export default function (Vue, { router, head, isClient }) {
-  // TODO add this later... why doesn't it work on build..
   Vue.use(VueTyperPlugin)
 
   Vue.component('Layout', DefaultLayout)

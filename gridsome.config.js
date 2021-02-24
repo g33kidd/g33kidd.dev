@@ -9,8 +9,23 @@ module.exports = {
   chainWebpack: config => {
     config.resolve.alias.set('@images', '~/assets/images')
   },
+
   plugins: [
     { use: "gridsome-plugin-tailwindcss" },
+    {
+      use: "@gridsome/source-filesystem",
+      options: {
+        path: 'journal/**/*.md',
+        route: "/blog/:slug",
+        typeName: "JournalEntry",
+        remark: {
+          plugins: [
+            '@gridsome/remark-prismjs',
+            '@gridsome/vue-remark'
+          ]
+        }
+      }
+    },
     {
       use: 'gridsome-plugin-svg',
       options: {
