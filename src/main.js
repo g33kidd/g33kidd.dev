@@ -3,7 +3,6 @@
 
 import DefaultLayout from '~/layouts/Default.vue'
 import Logo from '~/components/Logo.vue'
-import VueTyperPlugin from 'vue-typer'
 
 require('typeface-roboto')
 require('typeface-roboto-slab')
@@ -15,8 +14,12 @@ require('css.gg/icons/all.scss')
 
 require('~/assets/prism.scss')
 
+// import VueTyperPlugin from 'vue-typer';
+
 export default function (Vue, { router, head, isClient }) {
-  Vue.use(VueTyperPlugin)
+  // if (isClient) {
+  //   Vue.use(VueTyperPlugin)
+  // }
 
   Vue.component('Layout', DefaultLayout)
   Vue.component('logo', Logo)

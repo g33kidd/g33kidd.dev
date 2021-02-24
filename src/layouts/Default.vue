@@ -1,7 +1,7 @@
 <template>
   <div class="layout">
     <Navigation />
-    <Typer />
+    <!-- <Typer /> -->
     <slot />
   </div>
 </template>
