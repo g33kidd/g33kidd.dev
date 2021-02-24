@@ -8,7 +8,7 @@
     <span class="text-xs text-g-gray z-10" v-if="smol">{{ smol }}</span>
     <!-- TODO move stickers somewhere else... -->
     <div v-if="sticker">
-      <img :src="stickerPath" class="h-full w-auto pt-8 absolute opacity-95 bottom-0 left-0 z-0" />
+      <img :src="stickerPath" class="h-full w-auto pt-8 pb-2 absolute opacity-95 bottom-0 left-0 z-0" />
     </div>
   </a>
 </template>

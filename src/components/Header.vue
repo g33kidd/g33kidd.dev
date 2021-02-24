@@ -1,12 +1,12 @@
 <template>
-  <header class="header bg-g-black px-6 py-6">
+  <header class="header bg-g-black py-6">
     <twitch />
     <div class="container mx-auto">
       <div class="flex items-center justify-between">
         <g-link to="/">
           <logo class="w-10 h-10" />
         </g-link>
-        <nav class="grid grid-cols-2 md:flex gap-1 text-sm">
+        <nav class="hidden md:flex grid-cols-2 gap-1 text-sm">
           <nav-link v-for="link in links" :extra="link.extra" :key="link.to" :text="link.text" :to="link.to" />
         </nav>
         <g-link class="nav-link text-white font-bangers uppercase text-lg py-2 px-4 rounded transition transform hover:scale-110 hover:rotate-6 bg-g-red" to="/studios">
