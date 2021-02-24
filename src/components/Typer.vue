@@ -1,7 +1,13 @@
 <template>
-  <div class="content">
-    <vue-typer :text="welcomeMessages" :shuffle="true" :speed="120"></vue-typer>
-  </div>
+  <ClientOnly>
+    <div class="content">
+      <vue-typer
+        :text="welcomeMessages"
+        :shuffle="true"
+        :speed="120"
+      ></vue-typer>
+    </div>
+  </ClientOnly>
 </template>
 
 <script>

@@ -63,8 +63,7 @@ pre[class*="language-"] {
 
 :not(pre) > code[class*="language-"],
 pre[class*="language-"] {
-    background-color: transparent !important;
-    background-image: linear-gradient(to bottom, #2a2139 75%, #34294f);
+    background-color: #2a2139 !important;
 }
 
 /* Inline code */
