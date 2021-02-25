@@ -1,18 +1,18 @@
-// This is the main.js file. Import global CSS and scripts here.
-// The Client API can be used here. Learn more: gridsome.org/docs/client-api
-
+// Components
 import DefaultLayout from '~/layouts/Default.vue'
 import Logo from '~/components/Logo.vue'
 
+// Typeface imports
 require('typeface-roboto')
 require('typeface-roboto-slab')
 require('typeface-rubik')
 require('typeface-bangers')
 
 require('~/assets/main.scss')
-require('css.gg/icons/all.scss')
 
-require('~/assets/prism.scss')
+// External Styles
+require('css.gg/icons/all.scss')
+require("prismjs/plugins/line-numbers/prism-line-numbers.css");
 
 // import VueTyperPlugin from 'vue-typer';
 

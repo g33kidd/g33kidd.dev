@@ -6,20 +6,22 @@
  */
 
 .gridsome-code-title {
-    position: absolute;
     z-index: 0;
-    margin-bottom: -0.8em;
-    color: #4cc9f0; // why not ;-)
+    margin-bottom: 5px;
+    // color: #4cc9f0; // why not ;-)
+    // color: #000;
+    color: #ffff;
     text-shadow: 0 0 2px #100c0f, 0 0 5px #dc078e33, 0 0 10px #fff3;
-    text-align: right;
+    // text-align: right;
     font-family: Consolas, Monaco, "Andale Mono", "Ubuntu Mono", monospace;
-    line-height: 1.5;
-    padding: 12px 24px;
+    line-height: 1;
+    padding: 12px;
     right: 0;
-    opacity: 0.6;
-    border-top-left-radius: 0.3em;
-    border-top-right-radius: 0.3em;
-    // background-color: #2a2139;
+    // opacity: 0.6;
+    border-radius: 5px;
+    // border-top-left-radius: 0.3em;
+    // border-top-right-radius: 0.3em;
+    // background-color: $pink;
 }
 
 code[class*="language-"],

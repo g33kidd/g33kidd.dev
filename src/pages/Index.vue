@@ -3,10 +3,9 @@
 </template>
 
 <script>
-import Card from "~/components/Card.vue";
 import Typer from "~/components/Typer.vue";
 export default {
-  components: { Card, Typer },
+  components: { Typer },
   metaInfo: {
     title: "Welcome",
     description: "Hmmm..",

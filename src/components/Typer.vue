@@ -35,20 +35,20 @@ export default {
 </script>
 
 <style lang="scss">
-.content {
-  // position: absolute;
-  // left: 200px;
-  // right: 0;
-  // top: 0;
-  margin: 12px;
-  border-right: darken(#f72585, 25%);
-  border-right-style: dotted;
-  border-right-width: 4px;
-  background: rgba(0, 0, 0, 0.3);
-  padding: 12px;
+// .content {
+//   // position: absolute;
+//   // left: 200px;
+//   // right: 0;
+//   // top: 0;
+//   margin: 12px;
+//   border-right: darken(#f72585, 25%);
+//   border-right-style: dotted;
+//   border-right-width: 4px;
+//   background: rgba(0, 0, 0, 0.3);
+//   padding: 12px;
 
-  .inner {
-    position: relative;
-  }
-}
+//   .inner {
+//     position: relative;
+//   }
+// }
 </style>

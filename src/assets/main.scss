@@ -1,84 +1,74 @@
-.vue-typer {
-    /* Styles for the vue-typer container
-       e.g. font-family, font-size  */
-    font-family: "Hack", monospace;
-    font-size: 1rem;
+@import "scss/variables.scss";
 
-    .custom.char {
-        /* Styles for each character
-         e.g. color, background-color */
-        color: #fff;
+@import "scss/code.scss";
+@import "scss/navigation.scss";
+@import "scss/pages.scss";
+@import "scss/preflight.scss";
+@import "scss/typer.scss";
+@import "scss/content.scss";
 
-        &.typed {
-            /* Styles specific to typed characters
-           i.e. characters to the left of the caret */
-            //    TODO this is a cool idea but it's not working how I want right now..
-            // ! the characters need to be randomized for each string with different colors
-            // color: red;
-            // &:nth-child(4n) {
-            //     color: #f72585;
-            // }
+body {
+	// display: grid;
 
-            // &:nth-child(8n) {
-            //     color: #4cc9f0;
-            // }
-            // &:nth-child(4n + 1) {
-            //     color: darken(#f72585, 10%);
-            // }
-        }
-        &.selected {
-            /* Styles specific to selected characters
-           i.e. characters to the right of the caret while VueTyper's
-                'eraseStyle' is set to a selection-based style */
-            background: #f72585;
-        }
-        &.erased {
-            /* Styles specific to erased characters
-           i.e. characters to the right of the caret while VueTyper's
-                'eraseStyle' is set to a non-selection-based style */
-        }
-    }
+	// Cool background image
+	background-image: $bgColors;
+	background-size: cover;
 
-    .custom.caret {
-        /* Styles for the caret
-         e.g. background-color, animation, display */
-        background: #09b752;
-        width: 4px;
-        margin-left: 4px;
+	// Default Font settings
+	font-family: "Hack", monospace;
+	font-size: 1rem;
+	line-height: 1.5;
+	color: #fff;
 
-        &.pre-type {
-            /* Styles for the caret when it is idle before typing
-           i.e. before a string starts being typed, during 'preTypeDelay' */
-            box-shadow: 4px 4px lighten(#f72585, 20%);
-        }
-        &.pre-erase {
-            /* Styles for the caret when it is idle before erasing
-           i.e. before a string starts being erased, during 'preEraseDelay' */
-        }
-        &.idle {
-            /* Styles for the caret when it is idle, but VueTyper has not yet completed typing
-           i.e. when 'pre-type' or 'pre-erase' is set, but not 'complete' */
-            // box-shadow: 4px 4px lighten(#f72585, 20%);
-            box-shadow: 2px 2px lighten(#f72585, 20%);
-            background: #e2ef70;
-        }
-        &.typing {
-            /* Styles for the caret while VueTyper is typing
-           i.e. when the caret is moving forwards */
-            // box-shadow: 4px 4px lighten(#f72585, 20%);
-        }
-        &.selecting {
-            /* Styles for the caret while VueTyper is selecting
-           i.e. when the caret is moving backwards and 'eraseStyle' is
-           set to a selection-based style */
-        }
-        &.erasing {
-            /* Styles for the caret while VueTyper is erasing
-           i.e. when the caret is moving backwards and 'eraseStyle' is
-           set to a non-selection-based style */
-        }
-        &.complete {
-            /* Styles for the idle caret when VueTyper has finished all typing/erasing */
-        }
-    }
+	// Default spacing
+	margin: 0;
+	padding: 0;
+
+	::-webkit-scrollbar {
+		width: 2px;
+	}
+
+	::-webkit-scrollbar:empty {
+		width: 0px;
+	}
+
+	::-webkit-scrollbar-track {
+		background: darken($pink, 12%);
+	}
+
+	::-webkit-scrollbar-thumb {
+		background: #4cc9f0;
+	}
+
+	::-webkit-scrollbar-thumb:hover {
+		background: darken($blue, 8%);
+	}
+
+	// === DOT MATRIX
+
+	&::after {
+		content: "";
+		background-color: rgba(0, 0, 0, 0.3);
+		height: 100%;
+		width: 100%;
+		position: fixed;
+		top: 0;
+		z-index: -1;
+		pointer-events: none;
+	}
+
+	// This is the dot matrix overlay.
+	// TODO this might be replaced by a canvas at some point for more interactivity.
+	&::before {
+		content: "";
+		background-image: url(http://s14.directupload.net/images/111129/44ga9qid.png);
+		background-size: 0.2rem;
+		opacity: 0.5;
+		height: 100%;
+		width: 100%;
+		position: fixed;
+		top: 0;
+		z-index: 1;
+		pointer-events: none;
+	}
 }

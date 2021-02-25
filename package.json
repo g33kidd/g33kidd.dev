@@ -19,6 +19,7 @@
     "gridsome-plugin-svg": "0.0.14",
     "gridsome-plugin-tailwindcss": "^4.1.1",
     "postcss": "^7.0.35",
+    "prismjs": "^1.23.0",
     "sass": "^1.30.0",
     "sass-loader": "^10.1.0",
     "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.0.2",

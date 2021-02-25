@@ -23,7 +23,7 @@ module.exports = {
           classPrefix: 'language-',
           aliases: {},
           noInlineHighlight: false,
-          showLineNumbers: false,     //  `require("prismjs/plugins/line-numbers/prism-line-numbers.css");`
+          showLineNumbers: true,     //  `require("prismjs/plugins/line-numbers/prism-line-numbers.css");`
           languageExtensions: [],
           prompt: {                   //  `require("prismjs/plugins/command-line/prism-command-line.css");`
             user: `root`,
@@ -43,6 +43,19 @@ module.exports = {
         path: 'journal/**/*.md',
         route: "/blog/:slug",
         typeName: "JournalEntry",
+        remark: {
+          plugins: [
+            // '@gridsome/remark-prismjs',
+          ]
+        }
+      }
+    },
+    {
+      use: "@gridsome/source-filesystem",
+      options: {
+        path: 'notes/**/*.md',
+        route: "/notes/:slug",
+        typeName: "Note",
         remark: {
           plugins: [
             // '@gridsome/remark-prismjs',

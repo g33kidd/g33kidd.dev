@@ -1,8 +1,8 @@
 <template>
   <Layout>
-    <div class="page-content">
+    <div class="container journal">
       <h1 class="title">{{ $page.journalEntry.title }}</h1>
-      <div class="journal-entry" v-html="$page.journalEntry.content"></div>
+      <div class="content" v-html="$page.journalEntry.content"></div>
     </div>
 
     <!-- TODO a cool effect can be made by keeping it here.. -->
@@ -33,21 +33,21 @@ export default {
 </script>
 
 <style lang="scss">
-.title {
-  font-size: 24px;
-  font-weight: 800;
-  text-align: center;
-  margin: 24px 12px;
-}
+// .title {
+//   font-size: 24px;
+//   font-weight: 800;
+//   text-align: center;
+//   margin: 24px 12px;
+// }
 
-.journal-entry {
-  p {
-    margin: 18px 6px;
-  }
+// .journal-entry {
+//   p {
+//     margin: 18px 6px;
+//   }
 
-  h1 {
-    font-size: 2rem;
-    margin: 0 0 18px;
-  }
-}
+//   h1 {
+//     font-size: 2rem;
+//     margin: 0 0 18px;
+//   }
+// }
 </style>
