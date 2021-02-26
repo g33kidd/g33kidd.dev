@@ -1,8 +1,16 @@
 <template>
   <Layout>
     <div class="container journal">
-      <h1 class="title">{{ $page.journalEntry.title }}</h1>
-      <div class="content" v-html="$page.journalEntry.content"></div>
+      <div class="page">
+        <div>
+          <span class="">{{ $page.journalEntry.created }}</span>
+          <span class="">{{ $page.journalEntry.published }}</span>
+          <span class="">{{ $page.journalEntry.lastEdit }}</span>
+          <span class="">v{{ $page.journalEntry.version }}</span>
+        </div>
+        <h1 class="title">{{ $page.journalEntry.title }}</h1>
+        <div class="content" v-html="$page.journalEntry.content"></div>
+      </div>
     </div>
 
     <!-- TODO a cool effect can be made by keeping it here.. -->
@@ -15,7 +23,7 @@ query JournalEntry ($path: String!) {
    journalEntry: journalEntry (path: $path) {
     id
     title
-    description
+    wip
     created
     published
     lastEdit
@@ -31,23 +39,3 @@ export default {
   name: "JournalEntry",
 };
 </script>
-
-<style lang="scss">
-// .title {
-//   font-size: 24px;
-//   font-weight: 800;
-//   text-align: center;
-//   margin: 24px 12px;
-// }
-
-// .journal-entry {
-//   p {
-//     margin: 18px 6px;
-//   }
-
-//   h1 {
-//     font-size: 2rem;
-//     margin: 0 0 18px;
-//   }
-// }
-</style>

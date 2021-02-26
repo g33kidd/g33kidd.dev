@@ -15,7 +15,7 @@
     // text-align: right;
     font-family: Consolas, Monaco, "Andale Mono", "Ubuntu Mono", monospace;
     line-height: 1;
-    padding: 12px;
+    // padding: 12px;
     right: 0;
     // opacity: 0.6;
     border-radius: 5px;
@@ -58,9 +58,56 @@ pre[data-file]::before {
 
 /* Code blocks */
 pre[class*="language-"] {
-    padding: 1em;
+    // padding: 1em;
     margin-bottom: 16px;
     overflow: auto;
+}
+
+// .gridsome-highlight {
+//     background-color: #2a2139 !important;
+//     padding: 12px 24px;
+// }
+
+/**
+ * Add back the container background-color, border-radius, padding, margin
+ * and overflow that we removed from <pre>.
+ */
+.gridsome-highlight {
+    background-color: #2a2139; //for solarized theme
+    border-radius: 0.3em;
+    margin: 2em 0;
+    padding: 1em;
+    overflow: auto;
+}
+.gridsome-highlight-code-line {
+    background-color: rgba(247, 37, 133, 0.1); //for solarized theme
+    display: block;
+    margin-right: -1em;
+    margin-left: -1em;
+    padding-right: 1em;
+    padding-left: 0.75em;
+    border-left: 0.25em solid rgba(247, 37, 133, 0.7);
+}
+
+/**
+   * Remove the default PrismJS theme background-color, border-radius, margin,
+   * padding and overflow.
+   * 1. Make the element just wide enough to fit its content.
+   * 2. Always fill the visible space in .gatsby-highlight.
+   * 3. Adjust the position of the line numbers
+   */
+.gridsome-highlight pre[class*="language-"] {
+    background-color: transparent;
+    margin: 0;
+    padding: 0;
+    overflow: initial;
+    float: left; /* 1 */
+    min-width: 100%; /* 2 */
+}
+
+/* Adjust the position of the line numbers */
+.gridsome-highlight pre[class*="language-"].line-numbers {
+    padding-left: 2.8em;
 }
 
 :not(pre) > code[class*="language-"],
@@ -146,6 +193,10 @@ pre[class*="language-"] {
 .token.entity,
 .token.url {
     color: #67cdcc;
+}
+
+.token.atom {
+    color: #ecf92a;
 }
 
 .token.important,

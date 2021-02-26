@@ -1,5 +1,7 @@
 <template>
-  <Layout> </Layout>
+  <Layout>
+    <div class="hero">Hello World!</div>
+  </Layout>
 </template>
 
 <script>
@@ -12,10 +14,3 @@ export default {
   },
 };
 </script>
-
-<style lang="scss">
-.name {
-  font-family: "Bangers", sans-serif;
-  font-size: 5rem;
-}
-</style>

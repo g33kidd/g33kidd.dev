@@ -1,14 +1,13 @@
 ---
 # titles can change, slugs can't...?
-title: "Hello World! Still working on this site. There will be more changes coming soon!"
-excerpt: ""
+title: "Hello World!"
+excerpt: "This is the first post on my website, check it out!"
 slug: "hello-world"
 created: 9-17-2020
 published: 2-12-2021
 lastEdit: 2-24-2021
-author: "Josh"
-description: "Just a short descrtion of a blog post."
-version: 0
+version: 1
+wip: false
 
 # TODO You can do a featured image.. make in Figma.
 # featuredImage: ""

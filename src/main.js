@@ -8,19 +8,15 @@ require('typeface-roboto-slab')
 require('typeface-rubik')
 require('typeface-bangers')
 
+// Local Assets
 require('~/assets/main.scss')
 
-// External Styles
+// Package Styles
 require('css.gg/icons/all.scss')
 require("prismjs/plugins/line-numbers/prism-line-numbers.css");
-
-// import VueTyperPlugin from 'vue-typer';
+require("prismjs/plugins/command-line/prism-command-line.css");
 
 export default function (Vue, { router, head, isClient }) {
-  // if (isClient) {
-  //   Vue.use(VueTyperPlugin)
-  // }
-
   Vue.component('Layout', DefaultLayout)
   Vue.component('logo', Logo)
 

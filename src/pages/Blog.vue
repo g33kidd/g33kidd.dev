@@ -23,7 +23,6 @@ query {
         published
         created
         lastEdit
-        description
         path
       }
     }
