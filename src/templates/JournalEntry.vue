@@ -53,5 +53,12 @@ query JournalEntry ($path: String!) {
 <script>
 export default {
   name: "JournalEntry",
+  metaInfo() {
+    let entry = this.$page.journalEntry;
+
+    return {
+      title: entry.title,
+    };
+  },
 };
 </script>

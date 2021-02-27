@@ -1,6 +1,6 @@
 <template>
   <Layout>
-    <div class="hero">Hello World!</div>
+    <div class="hero"></div>
   </Layout>
 </template>
 
