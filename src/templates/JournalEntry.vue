@@ -2,11 +2,27 @@
   <Layout>
     <div class="container journal">
       <div class="page">
-        <div>
-          <span class="">{{ $page.journalEntry.created }}</span>
-          <span class="">{{ $page.journalEntry.published }}</span>
-          <span class="">{{ $page.journalEntry.lastEdit }}</span>
-          <span class="">v{{ $page.journalEntry.version }}</span>
+        <div class="info">
+          <div class="data">
+            <div>Created</div>
+            {{ $page.journalEntry.created }}
+          </div>
+          <div class="data">
+            <div>Published</div>
+            {{ $page.journalEntry.published }}
+          </div>
+          <div class="data">
+            <div>Last Edit</div>
+            {{ $page.journalEntry.lastEdit }}
+          </div>
+          <div class="data">
+            <div>Version</div>
+            v{{ $page.journalEntry.version }}
+          </div>
+          <div class="data">
+            <div>WIP</div>
+            {{ $page.journalEntry.wip }}
+          </div>
         </div>
         <h1 class="title">{{ $page.journalEntry.title }}</h1>
         <div class="content" v-html="$page.journalEntry.content"></div>

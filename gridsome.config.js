@@ -17,6 +17,9 @@ module.exports = {
       externalLinksRel: ['nofollow', 'noopener', 'noreferrer'],
       anchorClassName: 'icon icon-link',
       plugins: [
+        'gridsome-plugin-remark-mermaid',
+        'gridsome-remark-katex',
+        '@noxify/gridsome-plugin-remark-embed',
         ['gridsome-plugin-remark-prismjs-all', {
           highlightClassName: "gridsome-highlight",
           codeTitleClassName: "gridsome-code-title",
